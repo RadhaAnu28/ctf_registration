@@ -1,70 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>CTF-Registation Form</title>
-    </head>
-    <body>
-        <h1>CyberShield 2026: Campus CTF Challenge</h1>
-        <p><em>Test your ethical hacking and code-auditing skills in a 12-hour live security battle.</em></p>
+<head>
+    <meta charset="UTF-8">
+    <title>CyberShield 2026: Campus CTF Challenge</title>
+</head>
+<body>
 
-        <p><mark>100% Free for Students</mark> | <time>October 2026</time></p>
-        
-        <h2>Competition Tracks</h2>
+    <h1>CyberShield 2026: Campus CTF Challenge</h1>
+    <p><em>Test your ethical hacking and code-auditing skills in a 12-hour live security battle.</em></p>
+    <p><mark>100% Free for Students</mark> | <time datetime="2026-10">October 2026</time></p>
+
+    <h2>Competition Tracks</h2>
+    <ul>
+        <li><strong>Web Security</strong> (SQL Injection, XSS basics)</li>
+        <li><strong>Cryptography</strong> (Ciphers & Hashes)</li>
+        <li><strong>Reverse Engineering</strong> (Reading raw code/binary)</li>
+    </ul>
+
+    <section>
+        <h2>Need Help or Have Questions?</h2>
+        <p>Reach out to the student coordinators on Discord or Email:</p>
         <ul>
-            <li><strong>Web Security</strong> (SQL Injection, XSS basics)</li>
-            <li><strong>Cryptography</strong> (Ciphers & Hashes)</li>
-            <li><strong>Reverse Engineering</strong>(Reading raw code/binary)</li>
+            <li><strong>Lead Coordinator:</strong> Anuradha (3rd Year BCA) — <code>anuradha@student.edu</code></li>
+            <li><strong>Technical Support:</strong> Campus Cyber Club — <a href="#">Join Discord Server</a></li>
         </ul>
+    </section>
 
-        <h2>Registration Form</h2>
+    <h2>Registration Form</h2>
+
+    <form action="#" method="POST">
 
         <fieldset>
             <legend>Personal Details</legend>
 
-            <label for="name">Full Name (required): </label>
-            <input id="name" type="text" required><br>
+            <label for="name">Full Name (required):</label><br>
+            <input id="name" name="full_name" type="text" required><br><br>
 
-            <label for="college">College Name:</label>
-            <input id="college" type="text" required>
-
+            <label for="college-name">College Name:</label><br>
+            <input id="college-name" name="college" type="text" required>
         </fieldset>
+
+        <br>
 
         <fieldset>
-            <legend>Technical Preference: </legend>
+            <legend>Technical Preference</legend>
 
-            <label for="choice">Preferred Language:</label>
-            <input type="checkbox" id="python" name="language" value="python">
-            <label for="python">Python</label>
-            <input type="checkbox" id="cpp" name="language" value="cpp">
-            <label for="cpp">C++</label>
-            <input type="checkbox" id="java" name="language" value="java">
-            <label for="java">Java</label>
-            <input type="checkbox" id="bash" name="language" value="bash">
-            <label for="bash">Bash</label><br>
+            <p>Preferred Language:</p>
 
-            <label for="choice">Team Size:</label>
-            <input type="radio" id="solo" name="team_size" value="solo">
-            <label for="solo">Solo</label>
-            <input type="radio" id="team" name="team_size" value="team">
-            <label for="team">2-4 Person Team</label>
+            <input type="checkbox" id="lang-python" name="language" value="python">
+            <label for="lang-python">Python</label>
 
+            <input type="checkbox" id="lang-cpp" name="language" value="cpp">
+            <label for="lang-cpp">C++</label>
+
+            <input type="checkbox" id="lang-java" name="language" value="java">
+            <label for="lang-java">Java</label>
+
+            <input type="checkbox" id="lang-bash" name="language" value="bash">
+            <label for="lang-bash">Bash</label>
+
+            <p>Team Size:</p>
+
+            <input type="radio" id="team-solo" name="team_size" value="solo">
+            <label for="team-solo">Solo</label>
+
+            <input type="radio" id="team-group" name="team_size" value="group">
+            <label for="team-group">2-4 Person Team</label>
         </fieldset>
+
+        <br>
 
         <fieldset>
             <legend>Ethics and Confirmation</legend>
 
-            <input type="checkbox" checked>
-            <label for="text">I agree to the <a href="ethical.html">Security Ethics Waiver</a> and confirm I will only use my skills ethically.</label>
-
+            <input type="checkbox" id="ethics" name="ethics_agreed" required>
+            <label for="ethics">I agree to the <a href="ethical.html">Security Ethics Waiver</a> and confirm I will only use my skills ethically.</label>
         </fieldset>
 
-        <fieldset>
-            <legend>Questions & Feedback</legend>
-            <label for="user-questions">Have any questions or special requests for the organizers?</label>
-            <textarea id="user-questions" name="user_questions" rows="4" cols="40" placeholder="Type your questions here..."></textarea>
-        </fieldset><br>
+        <br>
 
         <button type="submit">Register for CyberShield</button>
-    </body>
+
+    </form>
+
+</body>
 </html>
