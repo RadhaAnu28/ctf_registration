@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CTF-Registation Form</title>
+    </head>
+    <body>
+        <h1>CyberShield 2026: Campus CTF Challenge</h1>
+        <p><em>Test your ethical hacking and code-auditing skills in a 12-hour live security battle.</em></p>
+
+        <p><mark>100% Free for Students</mark> | <time>October 2026</time></p>
+        
+        <h2>Competition Tracks</h2>
+        <ul>
+            <li><strong>Web Security</strong> (SQL Injection, XSS basics)</li>
+            <li><strong>Cryptography</strong> (Ciphers & Hashes)</li>
+            <li><strong>Reverse Engineering</strong>(Reading raw code/binary)</li>
+        </ul>
+
+        <h2>Registration Form</h2>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <label for="name">Full Name (required): </label>
+            <input id="name" type="text" required><br>
+
+            <label for="college">College Name:</label>
+            <input id="college" type="text" required>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Technical Preference: </legend>
+
+            <label for="choice">Preferred Language:</label>
+            <input type="checkbox" id="python" name="language" value="python">
+            <label for="python">Python</label>
+            <input type="checkbox" id="cpp" name="language" value="cpp">
+            <label for="cpp">C++</label>
+            <input type="checkbox" id="java" name="language" value="java">
+            <label for="java">Java</label>
+            <input type="checkbox" id="bash" name="language" value="bash">
+            <label for="bash">Bash</label><br>
+
+            <label for="choice">Team Size:</label>
+            <input type="radio" id="solo" name="team_size" value="solo">
+            <label for="solo">Solo</label>
+            <input type="radio" id="team" name="team_size" value="team">
+            <label for="team">2-4 Person Team</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Ethics and Confirmation</legend>
+
+            <input type="checkbox" checked>
+            <label for="text">I agree to the <a href="ethical.html">Security Ethics Waiver</a> and confirm I will only use my skills ethically.</label>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Questions & Feedback</legend>
+            <label for="user-questions">Have any questions or special requests for the organizers?</label>
+            <textarea id="user-questions" name="user_questions" rows="4" cols="40" placeholder="Type your questions here..."></textarea>
+        </fieldset><br>
+
+        <button type="submit">Register for CyberShield</button>
+    </body>
+</html>
