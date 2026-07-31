@@ -17,15 +17,6 @@
         <li><strong>Reverse Engineering</strong> (Reading raw code/binary)</li>
     </ul>
 
-    <section>
-        <h2>Need Help or Have Questions?</h2>
-        <p>Reach out to the student coordinators on Discord or Email:</p>
-        <ul>
-            <li><strong>Lead Coordinator:</strong> Anuradha (3rd Year BCA) — <code>anuradha@student.edu</code></li>
-            <li><strong>Technical Support:</strong> Campus Cyber Club — <a href="#">Join Discord Server</a></li>
-        </ul>
-    </section>
-
     <h2>Registration Form</h2>
 
     <form action="#" method="POST">
@@ -47,25 +38,25 @@
 
             <p>Preferred Language:</p>
 
-            <input type="checkbox" id="lang-python" name="language" value="python">
-            <label for="lang-python">Python</label>
+            <input type="checkbox" id="python" name="language" value="python">
+            <label for="python">Python</label>
 
-            <input type="checkbox" id="lang-cpp" name="language" value="cpp">
-            <label for="lang-cpp">C++</label>
+            <input type="checkbox" id="cpp" name="language" value="cpp">
+            <label for="cpp">C++</label>
 
-            <input type="checkbox" id="lang-java" name="language" value="java">
-            <label for="lang-java">Java</label>
+            <input type="checkbox" id="java" name="language" value="java">
+            <label for="java">Java</label>
 
-            <input type="checkbox" id="lang-bash" name="language" value="bash">
-            <label for="lang-bash">Bash</label>
+            <input type="checkbox" id="bash" name="language" value="bash">
+            <label for="bash">Bash</label>
 
             <p>Team Size:</p>
 
             <input type="radio" id="team-solo" name="team_size" value="solo">
             <label for="team-solo">Solo</label>
 
-            <input type="radio" id="team-group" name="team_size" value="group">
-            <label for="team-group">2-4 Person Team</label>
+            <input type="radio" id="group" name="team_size" value="group">
+            <label for="group">2-4 Person Team</label>
         </fieldset>
 
         <br>
@@ -78,6 +69,12 @@
         </fieldset>
 
         <br>
+
+        <fieldset>
+            <legend>Questions & Feedback</legend>
+           <label for="user-questions">Have any questions or special requests for the organizers?</label><br><br>
+           <textarea id="user-questions" name="user_questions" rows="4" cols="40" placeholder="Type your questions here..."></textarea>
+        </fieldset>
 
         <button type="submit">Register for CyberShield</button>
 
